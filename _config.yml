@@ -1,0 +1,27 @@
+title: "eax64"
+author: "Kevin Soules"
+description: "Really cool blog about ... something"
+#subheading: "Really cool blog about ... something"
+more: "read more"
+url: "http://libdev.so"
+
+
+comments:
+    disqus: "eax64githubio"
+
+style:
+    padding: 33%
+    anchor: "#46f"
+    serif-heading: true
+    nav: "#181818"
+    description: "white"
+    article:
+        odd: "#ffffff"
+        even: "#222222"
+
+links:
+  - github: "https://github.com/eax64/"
+  - twitter: "https://twitter.com/eax64/"
+
+excerpt_separator: "\n\n\n"
+defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
