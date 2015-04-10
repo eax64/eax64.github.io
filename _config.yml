@@ -4,7 +4,10 @@ description: "IT security, Hardware hacking, SDR"
 more: "read more"
 url: "http://libdev.so"
 
-
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+  
 comments:
     disqus: "eax64githubio"
 
