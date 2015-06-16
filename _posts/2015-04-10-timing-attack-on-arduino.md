@@ -19,7 +19,7 @@ You are in the same room as your target. The person is writing some text on his 
 Here, the primary task of your keyboard is to allow you to type text. The noise made by typing on it is an unintentional consequence.
 
 
-Every year a secret party is happening between some cool people you want to meat. Only the ones with the password can enter. And... You don't have this password. The good thing is that the host have a very bad memory, so just behind the front door, a screen has been hang up to display the party password in large black letters. Guess what? Screens are emitting electromagnetic leakage that can allow you to reconstruct the displayed image behind the door with some cheap device and some programming skills.
+Every year a secret party is happening between some cool people you want to meet. Only the ones with the password can enter. And... You don't have this password. The good thing is that the host have a very bad memory, so just behind the front door, a screen has been hang up to display the party password in large black letters. Guess what? Screens are emitting electromagnetic leakage that can allow you to reconstruct the displayed image behind the door with some cheap device and some programming skills.
 Here again, the electromagnetic radiation are artifact of the image being displayed.
 
 ## Overview
@@ -33,7 +33,7 @@ Let's imagine some door keypad:
  * There is no "Enter key", the password is checked as soon as 6 keys has been pressed
  * Each key press make a led blink
  * When the password is wrong, a red led light up.
- * There is no try limitation
+ * There is no trial limitation
 
 How does it work? Well, we will assume that each key press is added on a buffer, and when the six digits has been typed, a routine is called to check this password against the one stored in memory. If this is the good password, the door unlock, otherwise, a red led blink.
 
@@ -152,7 +152,7 @@ void loop() {
 }
 ```
 
-For the demo, a led is turning on before the check function, and turning off just after.
+For the demo, a led is turned on before the check function, and turned off just after.
 It's just to be simpler, but it could have been done with a beep on each key + a beep after the check.
 
 To measure the time needed for the check function, I just hook up a probe on the pin 13 (led).
